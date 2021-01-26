@@ -3,6 +3,10 @@
 # Rendered vue result
 ![rendered components](https://github.com/devrijal/vue-pagu-control/blob/master/vue-pagu-control.png?raw=true)
 
+- `pagu-control` backround changed regarding the percentage of used PAGU
+	- yellow [`used_percentage < 90%`]
+	- green [`used_percentage >= 90% && percentage <= 100%`]
+	- red [`used_percentage > 100%`]
 
 # Requirements
 

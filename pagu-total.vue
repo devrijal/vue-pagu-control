@@ -1,5 +1,6 @@
 <template>
-  <div class="main-box small-graph-box" v-if="show" :class="{'green-bg': !exceed, 'red-bg': exceed}">
+  <div class="main-box small-graph-box" v-if="show"
+       :class="{'green-bg': percentage >= 90 && percentage <= 100, 'yellow-bg': percentage < 90, 'red-bg': percentage > 100}">
     <span class="value">{{ paguTotal }}</span>
     <span class="headline">TOTAL PAGU</span>
     <div class="progress">
