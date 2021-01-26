@@ -54,6 +54,8 @@ module.exports = {
         }
         if (value <= 0) {
           this.exceed = true;
+        } else if(value >= 0) {
+          this.exceed = false;
         }
         return (value).toLocaleString('id')
       }
